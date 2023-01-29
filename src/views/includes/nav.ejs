@@ -1,0 +1,28 @@
+<header>
+    <nav class="navbar bg-body-tertiary p-3  bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          Agenda
+        </a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="/contato/index">Cadastrar contacto</a>
+          </li>
+         
+          <% if (user) { %>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="/login/logout">Sair</a>
+            </li>
+           <% } else {%>
+             
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/login/index">Entrar</a>
+            </li>
+            <% } %>   
+        
+         
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
